@@ -398,13 +398,6 @@ class CarInterface(CarInterfaceBase):
       ret.wheelbase = 2.67
       tire_stiffness_factor = 0.7
       ret.centerToFront = ret.wheelbase * 0.4
-    elif candidate == CAR.GRANDEUR_HG:
-      os.system("cd /data/openpilot/selfdrive/assets && rm -rf img_spinner_comma.png && cp Hyundai.png img_spinner_comma.png")
-      tire_stiffness_factor = 0.8
-      ret.mass = 1640. + STD_CARGO_KG
-      ret.wheelbase = 2.845
-      ret.centerToFront = ret.wheelbase * 0.385
-      ret.steerRatio = 17.
     # kia
     elif candidate == CAR.SORENTO:
       os.system("cd /data/openpilot/selfdrive/assets && rm -rf img_spinner_comma.png && cp Kia.png img_spinner_comma.png")
